@@ -8,22 +8,100 @@
   <script src="lib/onsenui/js/onsenui.min.js"></script>
 
   <link rel="stylesheet" href="components/loader.css">
-  <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
-  <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <script>
-    ons.ready(function() {
-      console.log("Onsen UI is ready!");
-    });
 
-    if (ons.platform.isIPhoneX()) {
-      document.documentElement.setAttribute('onsflag-iphonex-portrait', '');
-      document.documentElement.setAttribute('onsflag-iphonex-landscape', '');
-    }
-  </script>
+
 </head>
 <body>
-  This is a template for Onsen UI app.
+        <div class="container">
+          <div="col-xs-12"> 
+              <center><img src="homer.png" alt="Homer"></center>
+         <div class="card">
+          <div class="card-body">
+           <form class="login">
+
+          <!-- começo da input de sexo-->
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="input-group">
+                <label for="sexo">Sexo: </label>
+                <input type="radio" name="sexo" id="m"> Homem
+                <input type="radio" name="sexo" id="f"> Mulher
+                </div>
+              </div>
+            </div>
+          <!-- final da input de sexo-->
+
+          <!-- começo da input de peso-->
+           <div class="row">
+            <div class="col-xs-12">
+              <label for="peso">Peso: </label>
+              <div class="input-group">
+              <input type="number" class="form-control" placeholder="Insira seu peso aqui." aria-describedby="basic-addon2">
+              <span class="input-group-addon" id="textinho">Quilos</span>
+              </div>     
+            </div>
+          </div>
+          <!-- final da input de peso-->
+
+          <!-- começo da input de estatura-->
+           <div class="row">
+            <div class="col-xs-12">
+              <label for="estatura">Estatura: </label>
+              <div class="input-group">
+              <input type="number" class="form-control" placeholder="Insira sua altura aqui." aria-describedby="basic-addon2">
+              <span class="input-group-addon" id="textinho">cm</span>
+              </div>     
+            </div>
+          </div>
+          <!-- final da input de estatura-->
+
+          <!-- começo da input de idade-->
+           <div class="row">
+            <div class="col-xs-12">
+              <label for="idade">Idade: </label>
+              <div class="input-group">
+              <input type="number" class="form-control" placeholder="Insira sua idade aqui." aria-describedby="basic-addon2">
+              <span class="input-group-addon" id="textinho">anos</span>
+              </div>     
+            </div>
+          </div> 
+          <!-- final da input de idade-->
+
+          <!-- começo do dropdown de nivel de exercicios-->
+           <div class="row">
+            <div class="col-xs-12">
+              <label for="nivel">Nivel de atividade: </label>
+              <div class="input-group">
+              <div class="dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Nivel
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">Sedentario</a></li>
+                <li><a href="#">Atividade ligeira</a></li>
+                <li><a href="#">Atividade moderada</a></li>
+                <li><a href="#">Atvidade intensa</a></li>
+                <li><a href="#">Atvidade muito intensa</a></li>
+              </ul>
+              </div>
+             </div>     
+            </div>
+          </div>
+          <!-- final do dropdown de nivel de exercicios-->
+              </form> 
+            </div> 
+          </div>
+           <button class="btn btn-block" type="button" id="botaoC">Calcular</button>
+        </div>
+      </div>
+
+
+            <footer class="rodape">
+                    <p> < / > com ❤ por KetDoms e BrunaYumi </p>
+                  </footer>
 </body>
 </html>

@@ -1,2 +1,37 @@
 /**/
+label{
+    margin: 5px;
+    color: #000;
+}
+ body{
+   background-color:black;
+ }
 
+ .card{
+   background-color: white;
+   align-items: center;
+   margin-top: 20px;
+   margin-bottom: 20px;
+ }
+
+ #textinho{
+   color: #000;
+   background-color: #fce627;
+
+ }
+ img{
+  margin-top: 30px;
+  width: 300px;
+  height: 160px;
+  align-items: center;
+}
+
+#botaoC{
+  background-color: #fce627;
+  color: #000;
+}
+.rodape{
+  margin-top: 60px;
+  margin-right: 9px;
+  text-align: right;
+}
